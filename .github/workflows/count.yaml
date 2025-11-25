@@ -1,0 +1,34 @@
+name: count 
+
+on:
+  push: 
+    branches: ["main"]
+  workflow_dispatch:  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm -g install mdwc
+
+      - name: Count
+        run: mdwc README.md > countup.txt
+      - name: add commit & push
+        run: |
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "Count up" --allow-empty
+          git push origin page -f
