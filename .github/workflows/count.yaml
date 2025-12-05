@@ -24,6 +24,8 @@ jobs:
 
       - name: Count
         run: mdwc README.md > countup.txt
+      - name: Display
+        run: cat countup.txt
       - name: add commit & push
         run: |
           git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
