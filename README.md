@@ -79,6 +79,7 @@ Leon A. Gatysらによって、ニューラルスタイル転送は2015年には
 ### 実験環境
 ### データセット
 #### PACSデータセット
+PACSは、Photo Art Cartoon Sketchの略であり、4つのドメインの画像で構成されている。Photoは1670枚、Artは2048枚、Cartoonは2344枚、Sketchは
 #### ImageNet
 ### 実験1: 
 #### 目的
