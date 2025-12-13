@@ -88,12 +88,19 @@ Leon A. Gatysらによって、ニューラルスタイル転送は2015年には
 
 ## 実験
 ### 実験の目的
-### 実験環境
+
 ### データセット
 本研究では、ドメイン適応の精度を評価するために、4つのドメインで構成されている、PACSデータセットを用いる。また、VGGNetの事前学習を行うためにImageNetを用いる。
 
+### 実験環境
+実験環境として、GPUを搭載している計算機を用いる。図は、GPU、CPU、メモリの性能を表す。
+
+ニューラルスタイル転送と画像分類のCNNは、Tensorflowにて実装した。また、ニューラルスタイル転送と画像分類のCNNにおいて、事前にImagenetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。
+
 #### PACSデータセット
 PACSは、Photo Art Cartoon Sketchの略であり、4つのドメインで構成されている、ラベル付き画像データセットである。Photoは1670枚、Artは2048枚、Cartoonは2344枚、Sketchは3929枚で構成されている。各ドメインは、dog、elephant、giraffe、guitar、horse、house、personの、7つのクラスがある。本研究では、各ドメインの画像を三対一の割合で分割し、それぞれを学習用と評価用として利用する。
+
+表は、各ドメイン、
 
 #### ImageNet
 ImageNetは、Fei-Fei Liらによって発表されたラベル付き画像データセットである。
@@ -132,3 +139,4 @@ ImageNetは、Fei-Fei Liらによって発表されたラベル付き画像デ�
 
 - https://www.ite.or.jp/contents/keywords/2303keyword.pdf
 - https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf
+- https://keras.io/api/applications/vgg/
