@@ -102,7 +102,7 @@ Leon A. Gatysらによって、ニューラルスタイル転送は2015年には
 VGG16
 ```
 import keras
-mode = keras.applications.VGG16(
+model = keras.applications.VGG16(
     weights="imagenet",
     include_top=False,
 )
@@ -111,7 +111,7 @@ mode = keras.applications.VGG16(
 VGG19
 ```
 import keras
-mode = keras.applications.VGG19(
+model = keras.applications.VGG19(
     weights="imagenet",
     include_top=False,
 )
