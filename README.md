@@ -93,19 +93,39 @@ Leon A. Gatysらによって、ニューラルスタイル転送は2015年には
 本研究では、ドメイン適応の精度を評価するために、4つのドメインで構成されている、PACSデータセットを用いる。また、VGGNetの事前学習を行うためにImageNetを用いる。
 
 ### 実験環境
-実験環境として、GPUを搭載している計算機を用いる。図は、実験で実際に用いる計算機のGPU、CPU、メモリ、OSを表す。
+実験環境として、GPUを搭載している計算機を用いる。図は、実験で実際に用いる計算機のGPU、CPU、メモリ、OSを表す。GPUは、並列の数値計算を高速に行うことができる。ディープラーニングでは並列の計算を多く行うため、GPUを用いることによって、高速化を達成することができる。
 
 ニューラルスタイル転送と画像分類のCNNは、Pythonを用いて実装をした。また、ニューラルネットワークの構築と学習用のライブラリとして、TensorflowとKerasを用いる。Pythonはバージョン3.12.2、Tensorflowはバージョン2.18.1、Kerasはバージョン3.6.0を用いる。
 
-また、ニューラルスタイル転送と画像分類のCNNにおいて、事前にImagenetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。
+また、ニューラルスタイル転送と画像分類のCNNにおいて、事前にImagenetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。入手は、VGG16およびVGG19において、以下のコードを用いてそれぞれ行った。
+
+VGG16
+```
+import keras
+mode = keras.applications.VGG16(
+    weights="imagenet",
+    include_top=False,
+)
+```
+
+VGG19
+```
+import keras
+mode = keras.applications.VGG19(
+    weights="imagenet",
+    include_top=False,
+)
+```
 
 #### PACSデータセット
 PACSは、Photo Art Cartoon Sketchの略であり、4つのドメインで構成されている、ラベル付き画像データセットである。Photoは1670枚、Artは2048枚、Cartoonは2344枚、Sketchは3929枚で構成されている。各ドメインは、dog、elephant、giraffe、guitar、horse、house、personの、7つのクラスがある。本研究では、各ドメインの画像を三対一の割合で分割し、それぞれを学習用と評価用として利用する。
 
-表は、各ドメイン、クラスの写真の数を示している。
+図は、各ドメインの、クラス毎の画像の例である。
+
+表は、各ドメインの、クラス毎の画像の数を示している。
 
 #### ImageNet
-ImageNetは、Fei-Fei Liらによって発表されたラベル付き画像データセットである。
+ImageNetは、Fei-Fei Liらによって発表されたラベル付き画像データセットである。100万枚を超える様々な画像が含まれている。図は、ImageNetに含まれている画像データの例である。
 
 ### 実験1: 
 #### 目的
