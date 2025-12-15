@@ -90,7 +90,9 @@ Leon A. Gatysらによって、ニューラルスタイル転送は2015年には
 まず、ドメイン適応の種類の1つとして、
 
 ### データ拡張
-データ拡張とは、訓練データが少ない際に、データを増やすことによって、モデルの精度を向上することをすることを目指す手法のことである。ここでは、データ拡張の主な手法として、
+データ拡張とは、訓練データが少ない際に、データを増やすことによって、モデルの精度を向上することをすることを目指す手法のことである。ここでは、データ拡張の主な手法として、幾何学変換と側溝変換
+
+データ拡張の問題点として、
 
 ### ニューラルスタイル転送を用いたデータ拡張による精度向上
 先行研究として、ニューラルスタイル転送を用いてデータ拡張を行い、モデルの精度向上を図った、STaDA(Style Transfer as Data Augmentation)という研究がある。この研究では、生成型のスタイル転送を用いている。
@@ -186,5 +188,5 @@ ImageNetは、Fei-Fei Liらによって2009年に発表されたラベル付き�
 - https://www.ite.or.jp/contents/keywords/2303keyword.pdf
 - https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf
 - https://keras.io/api/applications/vgg/
-
+- https://www.ibm.com/jp-ja/think/topics/data-augmentation
 
