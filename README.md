@@ -86,6 +86,8 @@ $`E_{l} = \frac{1}{4M_{l}^{2}M_{l}^{2}}\Sigma_{i,j} (G_{ij}^{l}-A_{ij}^{l})^{2}`
 
 $`L_{style} = \Sigma^{L}_{l=0}w_{l}E_{l}`$
 
+$`L_{total} = \alpha L_{content} + \beta L_{style}`$
+
 初期画像から、損失が小さくなるように、勾配の計算をする。そして、画像を更新する。
 
 ##### Justin Johnsonによるニューラルスタイル転送の手法
