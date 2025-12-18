@@ -235,4 +235,7 @@ model = keras.applications.VGG19(
 - https://keras.io/api/applications/vgg/
 - https://www.ibm.com/jp-ja/think/topics/data-augmentation
 - https://www.jstage.jst.go.jp/article/iieej/37/6/37_6_815/_pdf/-char/ja
-
+- https://people.eecs.berkeley.edu/~efros/research/quilting/quilting.pdf
+- https://speakerdeck.com/ringa_hyj/shen-ceng-xue-xi-wotukatutahua-xiang-sutairubian-huan-falsehua-tojin-madefalseli-shi?slide=2
+- https://medium.com/@sandhrabijoy/vgg16-vs-vgg19-a-detailed-comparison-of-the-popular-cnn-architectures-cae5ba404352
+- 
