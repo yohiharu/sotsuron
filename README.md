@@ -140,10 +140,11 @@ Leon A. Gatysによるニューラルスタイル転送の手法が提案され�
 
 ### 問題点hogehoge(adapt style)
 
-
+本研究では、ニューラルスタイル転送を用いて
 
 ## 提案手法
-本章では、提案手法として、
+本章では、提案手法と、
+
 ### 基本方針
 本研究では、ニューラルスタイル転送を用いて、スタイル画像のドメインの画像を生成する。生成した画像を用いて、画像分類の畳み込みニューラルネットワークの学習を行う。そして、画像分類の精度の変化
 
@@ -247,4 +248,4 @@ model = keras.applications.VGG19(
 - https://people.eecs.berkeley.edu/~efros/research/quilting/quilting.pdf
 - https://speakerdeck.com/ringa_hyj/shen-ceng-xue-xi-wotukatutahua-xiang-sutairubian-huan-falsehua-tojin-madefalseli-shi?slide=2
 - https://medium.com/@sandhrabijoy/vgg16-vs-vgg19-a-detailed-comparison-of-the-popular-cnn-architectures-cae5ba404352
-- 
+- https://zenn.dev/monchy1017/articles/0c725f1d981881
