@@ -4,6 +4,7 @@
 
 
 ## はじめに
+畳み込みニューラルネットワーク(convolutional neural network, CNN)によって、従来に比べて、
 
 ### 研究背景
 ### 本論文の構成
