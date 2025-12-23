@@ -236,7 +236,7 @@ $`L_{total}= \alpha L_{multiple\_styles} + \beta L_{content}`$　
 
 #### PACSデータセット
 本研究では、ドメイン適応の精度を評価するために、複数のドメインで構成されているラベル付き画像データセットである、PACSデータセットを用いる。PACSデータセットは、Photo、Art、Cartoon、Sketchの4つのドメインで構成されている。
-各ドメインは、dog、elephant、giraffe、guitar、horse、house、personの、7つのクラスで構成されている。本研究では、各ドメインの画像を三対一の割合で分割し、それぞれを学習用と評価用として利用する。
+各ドメインは、dog、elephant、giraffe、guitar、horse、house、personの7つのクラスで構成されている。本研究では、各ドメインの画像を三対一の割合で分割し、それぞれを学習用と評価用として利用する。
 
 
 表では、各ドメインおよび各クラスごとの、学習用画像の数と評価用画像の数を、それぞれ示している。
