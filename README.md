@@ -396,7 +396,10 @@ model = keras.applications.VGG19(
 - https://people.eecs.berkeley.edu/~efros/research/quilting/quilting.pdf
 - https://speakerdeck.com/ringa_hyj/shen-ceng-xue-xi-wotukatutahua-xiang-sutairubian-huan-falsehua-tojin-madefalseli-shi?slide=2
 - https://medium.com/@sandhrabijoy/vgg16-vs-vgg19-a-detailed-comparison-of-the-popular-cnn-architectures-cae5ba404352
-- https://zenn.dev/monchy1017/articles/0c725f1d981881 
+- https://zenn.dev/monchy1017/articles/0c725f1d981881
+
+- https://arxiv.org/pdf/2411.07072
+- 
 
 ---
 ---
