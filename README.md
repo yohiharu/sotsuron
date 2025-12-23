@@ -183,7 +183,7 @@ Leon A. Gatysらが提案したニューラルスタイル転送では、一般�
 
 スタイル損失の拡張は、式のように行う。
 
-$`L_{style\_loss\_multiple}`$
+$`L_{style\_loss\_multiple}=`$
 
 そして、全体のスタイル損失は、式のようになる。
 
