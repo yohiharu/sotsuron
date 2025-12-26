@@ -257,26 +257,7 @@ $`L_{total}= \alpha L_{multiple\_styles} + \beta L_{content}`$　
 
 ニューラルスタイル転送と画像分類の畳み込みニューラルネットワークは、Pythonを用いた。また、ニューラルネットワークの構築と学習用のライブラリとして、TensorFlowとKerasを用いて実装を行った。Pythonはバージョン3.12.2、TensorFlowはバージョン2.18.1、Kerasはバージョン3.6.0を用いた。
 
-また、ニューラルスタイル転送と画像分類の畳み込みニューラルネットワークにおいて、事前にImageNetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。ImageNetによって事前学習されているVGGのモデルは、以下のコードを用いて入手した。modelという変数に、VGGのmodelが代入される。
-
-VGG16
-```
-import keras
-model = keras.applications.VGG16(
-    weights="imagenet",
-    include_top=False,
-)
-```
-
-VGG19
-```
-import keras
-model = keras.applications.VGG19(
-    weights="imagenet",
-    include_top=False,
-)
-```
-
+また、ニューラルスタイル転送と画像分類の畳み込みニューラルネットワークにおいて、事前にImageNetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。
 ニューラルスタイル転送における、コンテンツ画像の特徴とスタイル画像の特徴の抽出を行う畳み込みニューラルネットワークは、VGG19を用いる。重みはImageNetによって事前学習されているものを用いる。コンテンツの特徴抽出には、block5_conv2という畳み込み層を用いる。一方、スタイルの特徴抽出には、block1_conv1、block2_conv1、block3_conv1、block4_conv1、block5_conv1の5つの畳み込み層を用いる。
 
 
@@ -384,10 +365,33 @@ model = keras.applications.VGG19(
 
 リモートセンシングでは、例えば。
 
+
+## 付録
+ImageNetによって事前学習されているVGGのモデルは、以下のコードを用いて入手した。modelという変数に、VGGのmodelが代入される。
+
+VGG16
+```
+import keras
+model = keras.applications.VGG16(
+    weights="imagenet",
+    include_top=False,
+)
+```
+
+VGG19
+```
+import keras
+model = keras.applications.VGG19(
+    weights="imagenet",
+    include_top=False,
+)
+```
+
 ---
 ---
 
 
+<!--
 # メモ
 
 - https://www.ite.or.jp/contents/keywords/2303keyword.pdf
@@ -407,3 +411,5 @@ model = keras.applications.VGG19(
 ---
 
 # 表
+
+-->
