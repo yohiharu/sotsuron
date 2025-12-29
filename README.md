@@ -355,9 +355,9 @@ OS: Ubuntu 24.04.2 LTS
 
 | ターゲットドメイン | 精度 |
 |----|---------|
-| art painting ||
-| cartooon ||
-| sketch ||
+| art painting |0.465, 0.477|
+| cartooon |0.361, 0.374|
+| sketch |0.377, 0.359|
 
 
 #### 考察
