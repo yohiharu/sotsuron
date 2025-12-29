@@ -299,9 +299,9 @@ OS: Ubuntu 24.04.2 LTS
 
 | ターゲットドメイン | 精度 |
 |----|---------|
-| art painting | |
-| cartooon |  |
-| sketch |  |
+| art painting |0.46 |
+| cartooon |0.28 |
+| sketch | 0.37 |
 
 ニューラルスタイル転送によって生成した画像を用いた場合の結果
 
