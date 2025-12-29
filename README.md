@@ -267,11 +267,11 @@ $`L_{total}= \alpha L_{multiple\_styles} + \beta L_{content}`$　
 ニューラルスタイル転送と画像分類の畳み込みニューラルネットワークは、Pythonを用いた。また、ニューラルネットワークの構築と学習用のライブラリとして、TensorFlowとKerasを用いて実装を行った。それぞれ、TensorFlowはバージョン2.18.1、Kerasはバージョン3.6.0を用いた。
 
 なお、実験1において、生成と推論における速度の計測は、以下の図で示した環境で行った。
-<!-- GPU、CPU、メモリ、OS 
-GPU: GeForce RTX 4090（24GB）
-CPU: Intel Core i9-13900K
-メモリ: 64GB
-OS: Ubuntu 24.04.2 LTS
+|項目 | 仕様 | 
+|GPU |  GeForce RTX 4090（24GB）|
+|CPU |  Intel Core i9-13900K | 
+|メモリ |  64GB | 
+|OS |  Ubuntu 24.04.2 LTS |
 
 -->
 また、ニューラルスタイル転送と画像分類の畳み込みニューラルネットワークにおいて、事前にImageNetを用いて事前学習を行っているVGGNetの重みは、Kerasによって提供されているものを用いる。
