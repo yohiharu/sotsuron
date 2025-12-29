@@ -374,9 +374,9 @@ OS: Ubuntu 24.04.2 LTS
 #### 結果
 | ターゲットドメイン | 精度 |
 |----|---------|
-| art painting ||
-| cartooon ||
-| sketch ||
+| art painting |0.484, 0.455|
+| cartooon |0.350, 0.401|
+| sketch |0.412, 0.317|
 #### 考察
 
 ### 実験4: 初期画像別の精度
@@ -397,9 +397,9 @@ OS: Ubuntu 24.04.2 LTS
 
 | ターゲットドメイン | 精度 |
 |----|---------|
-| art painting | |
-| cartooon | |
-| sketch | |
+| art painting |0.465, 0.465 |
+| cartooon | 0.423, 0.395|
+| sketch |0.486, 0.445 |
 
 
 <!--
