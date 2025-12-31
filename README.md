@@ -487,7 +487,7 @@ model = keras.applications.VGG19(
 ---
 - https://arxiv.org/pdf/1708.01155
 - https://arxiv.org/pdf/1803.01229
-
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5206848
 ---
 ---
 
